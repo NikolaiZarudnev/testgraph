@@ -1,1 +1,15 @@
-![Alt text](http://gravizo.com/svg?%20%20digraph%20G%20{%20%20%20%20aize%20=%224,4%22;%20%20%20%20main%20[shape=box];%20%20%20%20main%20-%3E%20parse%20[weight=8];%20%20%20%20parse%20-%3E%20execute;%20%20%20%20main%20-%3E%20init%20[style=dotted];%20%20%20%20main%20-%3E%20cleanup;%20%20%20%20execute%20-%3E%20{%20make_string;%20printf}%20%20%20%20init%20-%3E%20make_string;%20%20%20%20edge%20[color=red];%20%20%20%20main%20-%3E%20printf%20[style=bold,label=%22100%20times%22];%20%20%20%20make_string%20[label=%22make%20a%20string%22];%20%20%20%20node%20[shape=box,style=filled,color=%22.7%20.3%201.0%22];%20%20%20%20execute%20-%3E%20compare;%20%20})
+![Alt text](https://g.gravizo.com/svg?%20digraph%20G%20{%20S%20-%3E%20S%20[label=%22_%22];%20S%20-%3E%20A;%20A%20-%3E%20S[label=%220-9%22];%20A%20-%3E%20A[label=%220-9%22];%20A%20-%3E%20B;%20B%20-%3E%20B%20[label=%22abc%22];%20B%20-%3E%20A;%20B%20-%3E%20S%20[label=%22abc%22];%20})
+
+
+![Alt text](https://g.gravizo.com/svg?
+  digraph G {
+    S -> S [label="_"];
+    S -> A;
+    A -> S[label="0-9"];
+    A -> A[label="0-9"];
+    A -> B;
+    B -> B [label="abc"];
+    B -> A;
+    B -> S [label="abc"];
+  }
+)
