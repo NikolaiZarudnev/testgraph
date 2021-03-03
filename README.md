@@ -1,12 +1,1 @@
-<img src='https://g.gravizo.com/svg?
- digraph G {
-   main -> parse -> execute;
-   main -> init;
-   main -> cleanup;
-   execute -> make_string;
-   execute -> printf
-   init -> make_string;
-   main -> printf;
-   execute -> compare;
- }
-'/>
+![Alt text](https://g.gravizo.com/svg?digraph G {A%20->%20B%20[label="a-z%20A-Z%20_"];B%20->%20B%20[label="a-z%20A-Z%200-9"];B%20->%20C%20[label="a-z%20A-Z%200-9"];})
